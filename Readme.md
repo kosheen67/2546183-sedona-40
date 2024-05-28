@@ -3,6 +3,8 @@
 * Студент: [Юлия Вострикова](https://up.htmlacademy.ru/htmlcss/40/user/2546183).
 * Наставник: [Дина Шарипова](https://htmlacademy.ru/profile/id1418957).
 
+* Сайт: [Мой проект Седона](https://kosheen67.github.io/2546183-sedona-40/)
+
 ---
 
 _Не удаляйте и не обращайте внимание на файлы:_<br>
