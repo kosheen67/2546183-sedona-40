@@ -1,0 +1,320 @@
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
+  font-display: swap;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  color: black;
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 400;
+  background-color: rgb(242, 242, 242);
+  text-align: center;
+}
+
+.visually-hidden {
+  display: none;
+}
+
+/*Main page*/
+.main-page-header {
+  background-color: white;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.navigation-list {
+  list-style: none;
+}
+
+.navigation-link {
+  text-decoration: none;
+  color: black;
+}
+
+.navigation-link-current {
+  text-decoration: underline;
+}
+
+.navigation-link-favourites {
+  color: white;
+  background-color: rgb(117, 97, 87);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.welcome {
+  background-image: url("../images/svg/welcome-divider.svg"), url("../images/jpeg/welcome-background.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat, no-repeat;
+  background-position: center bottom, center center;
+  background-color: grey;
+}
+
+.welcome-image {
+  width: 458px;
+  height: 352px;
+  margin-bottom: 25px;
+  margin-top: 51px;
+}
+
+.advantages-list {
+  list-style: none;
+}
+
+.advantages-title,
+.services-title,
+.searching-hotels-title,
+.subscription-title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.advantages-title-description,
+.services-title-description,
+.searching-hotels-description,
+.subscription-description {
+  font-size: 22px;
+  line-height: 26px;
+}
+
+.advantages-subtitle,
+.services-subtitle {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+
+.advantages-item:first-child,
+.advantages-item:last-child {
+  color: white;
+  background-color: grey;
+}
+
+.city-sedona-image,
+.bridge-image {
+  width: 800px;
+  height: 385px;
+}
+
+.services-list {
+  list-style: none;
+}
+
+.searching-hotels-link {
+  color: white;
+  background-color: rgb(117, 97, 87);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.subscription-title,
+.subscription-description {
+  color: white;
+  background-color: grey;
+}
+
+.subscription-button {
+  color: white;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  text-transform: uppercase;
+  background-color: rgb(130, 179, 211);
+  border-radius: 0 4px 4px 0;
+  border: 1px solid rgb(130, 179, 211);
+}
+
+.page-footer-contacts-list {
+  list-style: none;
+}
+
+.page-footer-contacts-phone {
+  font-size: 40px;
+  line-height: 40px;
+  color: black;
+  text-decoration: none
+}
+
+/*Catalog page*/
+.inner-header-title,
+.breadcrumbs-link {
+  color: white;
+  background-color: grey;
+}
+
+.breadcrumbs,
+.hotels-filter-list {
+  list-style: none;
+}
+
+.inner-header,
+.catalog-hotels,
+.search-results {
+  text-align: left;
+}
+
+.inner-header-title {
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 78px;
+}
+
+.breadcrumbs-link {
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.hotels-filter-title,
+.hotels-filter-item {
+  color: white;
+  background-color: grey;
+}
+
+.hotels-filter-title {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.infrastructure-label,
+.hotel-type-label {
+  font-size: 18px;
+  line-height: 23px;
+}
+
+.hotel-price-input[value="0"],
+.hotel-price-input[value="9000"] {
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.hotels-filter-submit-button {
+  color: white;
+  text-transform: uppercase;
+  background-color: rgb(130, 179, 211);
+  border-radius: 4px;
+  border: 1px solid rgb(130, 179, 211);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+.hotels-filter-submit-button:last-child {
+  background-color: transparent;
+  border: 1px solid transparent;
+}
+
+.search-results-title {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.product-list {
+  list-style: none;
+}
+
+.product-card-link {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  color: black;
+  text-decoration: none;
+}
+
+.product-card-details,
+.product-card-favourites,
+.product-card-rating {
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  border-radius: 4px;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+}
+
+.product-card-details {
+  background: rgb(117, 97, 87);
+}
+
+.product-card-favourites {
+  border-radius: 4px;
+  background: rgb(130, 179, 211);
+  border: 1px solid rgb(130, 179, 211);
+}
+
+.button {
+  background: rgb(125, 181, 79);
+}
+
+.product-card-rating {
+  color: black;
+  font-weight: inherit;
+}
+
+.pagination {
+  list-style: none;
+}
+
+.pagination-link {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 36px;
+  color: white;
+  border-radius: 4px;
+  background: rgb(130, 179, 211);
+  text-decoration: none;
+}
+
+.pagination-current {
+  background: rgb(242, 242, 242);
+  color: black;
+}
+
+.pagination-next {
+  background: transparent;
+}
+
+.catalog-page {
+  color: black;
+  background-color: rgb(242, 242, 242);
+}
+
+.subscription-input {
+  background-color: rgb(242, 242, 242);
+}

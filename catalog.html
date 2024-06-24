@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Каталог</title>
+    <link type="image/x-icon" href="images/svg/favicon.svg" rel="shortcut icon">
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
 
   <body>
@@ -15,8 +17,8 @@
       </a>
 
       <!-- Navigation -->
-      <nav class="navigaion">
-        <ul class="nanigation-list">
+      <nav class="navigation">
+        <ul class="navigation-list">
           <li class="navigation-item">
             <a class="navigation-link" href="index.html">Главная</a>
           </li>
@@ -27,7 +29,7 @@
             <a class="navigation-link navigation-link-current" href="catalog.html">Гостиницы</a>
           </li>
         </ul>
-        <ul class="nanigation-list navigation-user">
+        <ul class="navigation-list navigation-user">
           <li class="navigation-item">
             <a class="navigation-link" href="#">
               <span class="visually-hidden">Поиск</span>
@@ -39,7 +41,7 @@
               12</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="#">
+            <a class="navigation-link-favourites" href="#">
               <span class="visually-hidden">Переход на страницу с информацией о городе Седона</span>
               Хочу сюда!</a>
           </li>
@@ -69,20 +71,20 @@
         <h2 class="visually-hidden">Список фильтров для выбора гостиниц</h2>
         <form class="hotels-filter" action="https://echo.htmlacademy.ru" method="post">
           <fieldset class="hotels-filter-group">
-            <legend class="hotels-filter-title">Инфраструктура:</legend>
+            <legend class="hotels-filter-title"> Инфраструктура:</legend>
             <ul class="hotels-filter-list">
               <li class="hotels-filter-item">
-                <label>
+                <label class="infrastructure-label">
                   <input class="infrastructure-input" type="checkbox" name="swimming-pool" checked> Бассейн
                 </label>
               </li>
               <li class="hotels-filter-item">
-                <label>
+                <label class="infrastructure-label">
                   <input class="infrastructure-input" type="checkbox" name="parking" checked> Парковка
                 </label>
               </li>
               <li class="hotels-filter-item">
-                <label>
+                <label class="infrastructure-label">
                   <input class="infrastructure-input" type="checkbox" name="wi-fi"> Wi-Fi
                 </label>
               </li>
@@ -92,17 +94,17 @@
             <legend class="hotels-filter-title"> Тип Жилья:</legend>
             <ul class="hotels-filter-list">
               <li class="hotels-filter-item">
-                <label>
+                <label class="hotel-type-label">
                   <input class="hotel-type-input" type="radio" name="hotel-type-name" value="hotel" checked> Гостиница
                 </label>
               </li>
               <li class="hotels-filter-item">
-                <label>
+                <label class="hotel-type-label">
                   <input class="hotel-type-input" type="radio" name="hotel-type-name" value="motel"> Мотель
                 </label>
               </li>
               <li class="hotels-filter-item">
-                <label>
+                <label class="hotel-type-label">
                   <input class="hotel-type-input" type="radio" name="hotel-type-name" value="apartments"> Апартаменты
                 </label>
               </li>
@@ -212,11 +214,12 @@
       <!-- Subscription -->
       <section class="subscription">
         <h2 class="visually-hidden">Подписка на рассылку</h2>
-        <h3 class="subscription-title">Подпишитесь на рассылку</h3>
-        <p class="subscription-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
+        <h3 class="subscription-title catalog-page">Подпишитесь на рассылку</h3>
+        <p class="subscription-description catalog-page">Только полезная информация и никакого спама, честное
+          бойскаутское!</p>
         <form class="subscription-form" action="#" method="post">
-          <label>
-            <input type="email" name="email" placeholder="Ваш e-mail" required>
+          <label class="subscription-label">
+            <input class="subscription-input" type="email" name="email" placeholder="Ваш e-mail" required>
           </label>
           <button class="subscription-button" type="submit">Подписаться</button>
         </form>
