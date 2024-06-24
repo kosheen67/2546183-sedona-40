@@ -25,12 +25,12 @@ body {
   margin: 0;
   padding: 0;
   border: 0;
-  color: black;
+  color: rgb(51, 51, 51);
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
   font-weight: 400;
-  background-color: rgb(242, 242, 242);
+  background-color: white;
   text-align: center;
 }
 
@@ -71,7 +71,7 @@ body {
 
 .welcome {
   background-image: url("../images/svg/welcome-divider.svg"), url("../images/jpeg/welcome-background.jpg");
-  background-size: 100% auto;
+  background-size: 100% auto, cover;
   background-repeat: no-repeat, no-repeat;
   background-position: center bottom, center center;
   background-color: grey;
@@ -96,6 +96,7 @@ body {
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
+  color: black;
 }
 
 .advantages-title-description,
@@ -112,12 +113,22 @@ body {
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
+  color: black;
 }
 
-.advantages-item:first-child,
-.advantages-item:last-child {
+.advantages-item-first,
+.advantages-item-fifth {
   color: white;
-  background-color: grey;
+  background-color: rgb(130, 179, 211);
+}
+
+.advantages-subtitle-first,
+.advantages-subtitle-fifth {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .city-sedona-image,
@@ -126,8 +137,28 @@ body {
   height: 385px;
 }
 
+.advantages-item-second,
+.advantages-item-fourth {
+  background: rgba(131, 179, 211, 0.12);
+}
+
+.advantages-item-third {
+  background: rgba(131, 179, 211, 0.2);
+}
+
 .services-list {
   list-style: none;
+  color: black;
+}
+
+.services-item:first-child,
+.services-item:last-child {
+
+  background: rgba(131, 179, 211, 0.12);
+}
+
+.services-description {
+  color: rgb(51, 51, 51);
 }
 
 .searching-hotels-link {
@@ -137,12 +168,20 @@ body {
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
+  text-decoration: none;
+}
+
+.subscription {
+  background-color: grey;
+  background-image: url("../images/jpeg/subscription-background.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
 }
 
 .subscription-title,
 .subscription-description {
   color: white;
-  background-color: grey;
 }
 
 .subscription-button {
@@ -168,21 +207,17 @@ body {
 }
 
 /*Catalog page*/
-.inner-header-title,
-.breadcrumbs-link {
+
+.catalog-hotels {
+  text-align: left;
   color: white;
-  background-color: grey;
+  background: #82b3d3 url("../images/jpeg/filter-background.jpg") no-repeat center center;
+  background-size: cover;
 }
 
 .breadcrumbs,
 .hotels-filter-list {
   list-style: none;
-}
-
-.inner-header,
-.catalog-hotels,
-.search-results {
-  text-align: left;
 }
 
 .inner-header-title {
@@ -194,12 +229,6 @@ body {
 .breadcrumbs-link {
   font-size: 16px;
   line-height: 21px;
-}
-
-.hotels-filter-title,
-.hotels-filter-item {
-  color: white;
-  background-color: grey;
 }
 
 .hotels-filter-title {
@@ -236,11 +265,23 @@ body {
   border: 1px solid transparent;
 }
 
+.search-results {
+  text-align: left;
+}
+
 .search-results-title {
   font-size: 30px;
   font-weight: 700;
   line-height: 36px;
   text-transform: uppercase;
+  color: black;
+}
+
+.select-control-option {
+  color: rgb(51, 51, 51);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21px;
 }
 
 .product-list {
@@ -273,7 +314,6 @@ body {
 }
 
 .product-card-favourites {
-  border-radius: 4px;
   background: rgb(130, 179, 211);
   border: 1px solid rgb(130, 179, 211);
 }
@@ -283,7 +323,7 @@ body {
 }
 
 .product-card-rating {
-  color: black;
+  color: rgb(51, 51, 51);
   font-weight: inherit;
 }
 
@@ -310,9 +350,19 @@ body {
   background: transparent;
 }
 
-.catalog-page {
+
+.subscription-title-catalog {
   color: black;
-  background-color: rgb(242, 242, 242);
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.subscription-description-catalog {
+  color: rgb(51, 51, 51);
+  font-size: 22px;
+  line-height: 26px;
 }
 
 .subscription-input {
