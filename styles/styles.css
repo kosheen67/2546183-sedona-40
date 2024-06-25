@@ -184,9 +184,14 @@ body {
   color: white;
 }
 
+.subscription-input[placeholder="Ваш e-mail"] {
+  font-family: inherit;
+}
+
 .subscription-button {
   color: white;
   font-weight: 700;
+  font-family: inherit;
   font-size: 20px;
   line-height: 36px;
   text-transform: uppercase;
@@ -247,6 +252,7 @@ body {
 .hotel-price-input[value="9000"] {
   font-weight: 700;
   line-height: 24px;
+  font-family: inherit;
 }
 
 .hotels-filter-submit-button {
@@ -256,6 +262,7 @@ body {
   border-radius: 4px;
   border: 1px solid rgb(130, 179, 211);
   font-size: 16px;
+  font-family: inherit;
   font-weight: 700;
   line-height: 20px;
 }
@@ -275,6 +282,10 @@ body {
   line-height: 36px;
   text-transform: uppercase;
   color: black;
+}
+
+.select-control {
+  font-family: inherit;
 }
 
 .select-control-option {
@@ -301,6 +312,7 @@ body {
 .product-card-rating {
   color: rgb(255, 255, 255);
   font-size: 16px;
+  font-family: inherit;
   font-weight: 700;
   line-height: 20px;
   border-radius: 4px;
@@ -320,6 +332,7 @@ body {
 
 .button {
   background: rgb(125, 181, 79);
+  font-family: inherit;
 }
 
 .product-card-rating {
