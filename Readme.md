@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Юлия Вострикова](https://up.htmlacademy.ru/htmlcss/40/user/2546183).
-* Наставник: [Дина Шарипова](https://htmlacademy.ru/profile/id1418957).
+* Наставник: [Евгения Подопригора](https://htmlacademy.ru/profile/id2387199).
 
 * Сайт: [Мой проект Седона](https://kosheen67.github.io/2546183-sedona-40/)
 
