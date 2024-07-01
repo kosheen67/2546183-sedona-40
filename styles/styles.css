@@ -20,18 +20,29 @@
   box-sizing: border-box;
 }
 
+html {
+  height: 100%
+}
 
 body {
   margin: 0;
-  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   border: 0;
-  color: rgb(51, 51, 51);
+  color: #333333;
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
   font-weight: 400;
-  background-color: white;
+  background-color: #f2f2f2;
   text-align: center;
+}
+
+.container {
+  width: 1200px;
+  background-color: #ffffff;
+  margin: 0 auto;
 }
 
 .visually-hidden {
@@ -39,20 +50,34 @@ body {
 }
 
 /*Main page*/
-.main-page-header {
-  background-color: white;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 24px;
+.main-container {
+  flex-grow: 1;
+}
+
+.navigation {
+  width: 920px;
+  display: flex;
+  margin: 0 auto;
 }
 
 .navigation-list {
   list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 607px;
+}
+
+.navigation-user {
+  max-width: 308px;
+  margin-left: auto;
 }
 
 .navigation-link {
   text-decoration: none;
-  color: black;
+  color: #000000;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
 }
 
 .navigation-link-current {
@@ -60,8 +85,8 @@ body {
 }
 
 .navigation-link-favourites {
-  color: white;
-  background-color: rgb(117, 97, 87);
+  color: #ffffff;
+  background-color: #756157;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
@@ -69,12 +94,17 @@ body {
   text-decoration: none;
 }
 
+.page-container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
 .welcome {
-  background-image: url("../images/svg/welcome-divider.svg"), url("../images/jpeg/welcome-background.jpg");
+  background-image: url("../images/welcome-divider.svg"), url("../images/welcome-background.jpg");
   background-size: 100% auto, cover;
   background-repeat: no-repeat, no-repeat;
   background-position: center bottom, center center;
-  background-color: grey;
+  background-color: #808080;
 }
 
 .welcome-image {
@@ -96,7 +126,7 @@ body {
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
-  color: black;
+  color: #000000;
 }
 
 .advantages-title-description,
@@ -113,22 +143,24 @@ body {
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
-  color: black;
+  color: #000000;
 }
 
-.advantages-item-first,
-.advantages-item-fifth {
-  color: white;
-  background-color: rgb(130, 179, 211);
+.advantages-subtitle .color1 {
+  color: #ffffff;
 }
 
-.advantages-subtitle-first,
-.advantages-subtitle-fifth {
-  font-size: 24px;
-  font-weight: 700;
-  line-height: 28px;
-  text-align: center;
-  text-transform: uppercase;
+.color1 {
+  color: #ffffff;
+  background-color: #82b3d3;
+}
+
+.color2 {
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
+.color3 {
+  background-color: rgba(131, 179, 211, 0.2);
 }
 
 .city-sedona-image,
@@ -137,43 +169,33 @@ body {
   height: 385px;
 }
 
-.advantages-item-second,
-.advantages-item-fourth {
-  background: rgba(131, 179, 211, 0.12);
-}
-
-.advantages-item-third {
-  background: rgba(131, 179, 211, 0.2);
-}
-
 .services-list {
   list-style: none;
-  color: black;
+  color: #000000;
 }
 
 .services-item:first-child,
 .services-item:last-child {
-
   background: rgba(131, 179, 211, 0.12);
 }
 
 .services-description {
-  color: rgb(51, 51, 51);
+  color: #333333;
 }
 
 .searching-hotels-link {
-  color: white;
-  background-color: rgb(117, 97, 87);
+  color: #ffffff;
+  background-color: #756157;
   font-weight: 700;
-  font-size: 16px;
-  line-height: 20px;
+  font-size: 20px;
+  line-height: 36px;
   text-transform: uppercase;
   text-decoration: none;
 }
 
 .subscription {
-  background-color: grey;
-  background-image: url("../images/jpeg/subscription-background.jpg");
+  background-color: #808080;
+  background-image: url("../images/subscription-background.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -181,23 +203,29 @@ body {
 
 .subscription-title,
 .subscription-description {
-  color: white;
+  color: #ffffff;
 }
 
-.subscription-input[placeholder="Ваш e-mail"] {
+.subscription-input {
+  background-color: #f2f2f2;
+}
+
+.subscription-input::placeholder {
   font-family: inherit;
+  font-size: 18px;
+  line-height: 24px;
 }
 
 .subscription-button {
-  color: white;
+  color: #ffffff;
   font-weight: 700;
   font-family: inherit;
   font-size: 20px;
   line-height: 36px;
   text-transform: uppercase;
-  background-color: rgb(130, 179, 211);
+  background-color: #82b3d3;
   border-radius: 0 4px 4px 0;
-  border: 1px solid rgb(130, 179, 211);
+  border: 1px solid #82b3d3;
 }
 
 .page-footer-contacts-list {
@@ -207,7 +235,7 @@ body {
 .page-footer-contacts-phone {
   font-size: 40px;
   line-height: 40px;
-  color: black;
+  color: #000000;
   text-decoration: none
 }
 
@@ -215,8 +243,8 @@ body {
 
 .catalog-hotels {
   text-align: left;
-  color: white;
-  background: #82b3d3 url("../images/jpeg/filter-background.jpg") no-repeat center center;
+  color: #ffffff;
+  background: #82b3d3 url("../images/filter-background.jpg") no-repeat center center;
   background-size: cover;
 }
 
@@ -248,19 +276,20 @@ body {
   line-height: 23px;
 }
 
-.hotel-price-input[value="0"],
-.hotel-price-input[value="9000"] {
+.hotel-price-input,
+.hotel-price-input {
   font-weight: 700;
+  font-size: 18px;
   line-height: 24px;
   font-family: inherit;
 }
 
 .hotels-filter-submit-button {
-  color: white;
+  color: #ffffff;
   text-transform: uppercase;
-  background-color: rgb(130, 179, 211);
+  background-color: #82b3d3;
   border-radius: 4px;
-  border: 1px solid rgb(130, 179, 211);
+  border: 1px solid #82b3d3;
   font-size: 16px;
   font-family: inherit;
   font-weight: 700;
@@ -281,7 +310,7 @@ body {
   font-weight: 700;
   line-height: 36px;
   text-transform: uppercase;
-  color: black;
+  color: #000000;
 }
 
 .select-control {
@@ -289,7 +318,7 @@ body {
 }
 
 .select-control-option {
-  color: rgb(51, 51, 51);
+  color: #333333;
   font-size: 18px;
   font-weight: 400;
   line-height: 21px;
@@ -300,17 +329,20 @@ body {
 }
 
 .product-card-link {
+  text-decoration: none;
+}
+
+.product-card-title {
   font-size: 24px;
   font-weight: 700;
   line-height: 28px;
-  color: black;
-  text-decoration: none;
+  color: #000000;
 }
 
 .product-card-details,
 .product-card-favourites,
 .product-card-rating {
-  color: rgb(255, 255, 255);
+  color: #ffffff;
   font-size: 16px;
   font-family: inherit;
   font-weight: 700;
@@ -322,21 +354,21 @@ body {
 }
 
 .product-card-details {
-  background: rgb(117, 97, 87);
+  background: #756157;
 }
 
 .product-card-favourites {
-  background: rgb(130, 179, 211);
-  border: 1px solid rgb(130, 179, 211);
+  background: #82b3d3;
+  border: 1px solid #82b3d3;
 }
 
 .button {
-  background: rgb(125, 181, 79);
+  background: #7db54f;
   font-family: inherit;
 }
 
 .product-card-rating {
-  color: rgb(51, 51, 51);
+  color: #333333;
   font-weight: inherit;
 }
 
@@ -348,24 +380,23 @@ body {
   font-size: 20px;
   font-weight: 700;
   line-height: 36px;
-  color: white;
+  color: #ffffff;
   border-radius: 4px;
-  background: rgb(130, 179, 211);
+  background: #82b3d3;
   text-decoration: none;
 }
 
 .pagination-current {
-  background: rgb(242, 242, 242);
-  color: black;
+  background: #F2F2F2;
+  color: #000000;
 }
 
 .pagination-next {
   background: transparent;
 }
 
-
 .subscription-title-catalog {
-  color: black;
+  color: #000000;
   font-size: 30px;
   font-weight: 700;
   line-height: 36px;
@@ -373,11 +404,7 @@ body {
 }
 
 .subscription-description-catalog {
-  color: rgb(51, 51, 51);
+  color: #333333;
   font-size: 22px;
   line-height: 26px;
-}
-
-.subscription-input {
-  background-color: rgb(242, 242, 242);
 }
