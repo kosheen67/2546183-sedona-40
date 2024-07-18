@@ -70,8 +70,8 @@ body {
 
 .navigation {
   display: flex;
-  padding: 0;
-  margin: 0 70px;
+  padding: 0 70px;
+  margin: 0;
 }
 
 .navigation-list {
@@ -161,15 +161,14 @@ body {
 /*Advantages*/
 
 .advantages-title-container {
-  margin: 0 70px;
-  padding: 69px 204px;
+  margin: 0;
+  padding: 69px 70px 90px;
 }
 
 .advantages-title,
 .services-title,
 .searching-hotels-title,
 .subscription-title {
-  max-width: 620px;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -180,8 +179,7 @@ body {
 
 .advantages-title {
   margin: 0 15px 25px;
-  width: 620px;
-}
+  }
 
 .advantages-title-description,
 .services-title-description,
@@ -191,11 +189,6 @@ body {
   line-height: 26px;
   color: #333333;
   margin: 0;
-}
-
-.advantages-title-description {
-  margin-bottom: 21px;
-  width: 651px;
 }
 
 /*Advanatges List*/
@@ -225,6 +218,7 @@ body {
 .color1 {
   display: flex;
   flex-direction: row;
+  justify-content: center;
   width: 100%;
   padding: 0;
   margin: 0 auto;
@@ -240,11 +234,13 @@ body {
   margin: 0;
   margin-bottom: 60px;
   text-align: center;
+
 }
 
 .advantages-description {
   color: #333333;
   margin: 0;
+
 }
 
 .color1 {
@@ -269,18 +265,13 @@ body {
 
 /*Services*/
 .services-title-container {
-  margin: 0 70px;
-  padding: 64px 277px;
+  margin: 0;
+  padding: 64px 70px;
 }
 
 .services-title {
-  width: 505px;
-  margin-top: 0;
+    margin-top: 0;
   margin-bottom: 20px;
-}
-
-.services-title-description {
-  width: 490px;
 }
 
 .services-list {
@@ -302,13 +293,13 @@ body {
 
 .services-description {
   color: #333333;
+  margin: 0;
 }
-
 
 /*Searching Hotels*/
 .searching-hotels {
-  padding: 96px 234px;
-  margin: 0 70px;
+  padding: 96px 70px;
+  margin: 0;
 }
 
 .searching-hotels-title {
@@ -341,7 +332,7 @@ body {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  padding: 96px 258px 104px;
+  padding: 96px 70px 104px;
 }
 
 .subscription-title {
@@ -358,8 +349,8 @@ body {
 }
 
 .subscription-form {
-  max-width: 684px;
-  display: flex;
+    display: flex;
+  justify-content: center;
 }
 
 .subscription-input {
@@ -395,14 +386,16 @@ body {
 
 /*Footer*/
 .page-footer {
-  padding: 40px 0;
-  margin: 0 70px;
+  padding: 40px 70px;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
 }
 
 .page-footer-contacts-list {
   list-style: none;
   max-width: 142px;
-}
+  }
 
 .page-footer-contacts-link {
   display: block;
@@ -577,8 +570,8 @@ body {
 /*Search results*/
 .search-results {
   text-align: left;
-  padding: 56px 0 70px;
-  margin: 0 70px;
+  padding: 56px 70px 70px;
+  margin: 0;
 }
 
 .search-results-container {
@@ -652,6 +645,7 @@ body {
 
 .product-card-img {
   margin-bottom: 16px;
+  display: block;
 }
 
 .product-card-title {
@@ -767,8 +761,8 @@ body {
 
 /*Subscription Catalog*/
 .subscription-catalog {
-  padding: 96px 188px 104px;
-  margin: 0 70px;
+  padding: 96px 70px 104px;
+  margin: 0;
 }
 
 .subscription-title-catalog {
