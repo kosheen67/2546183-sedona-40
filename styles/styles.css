@@ -179,7 +179,7 @@ body {
 
 .advantages-title {
   margin: 0 15px 25px;
-  }
+}
 
 .advantages-title-description,
 .services-title-description,
@@ -270,7 +270,7 @@ body {
 }
 
 .services-title {
-    margin-top: 0;
+  margin-top: 0;
   margin-bottom: 20px;
 }
 
@@ -349,7 +349,7 @@ body {
 }
 
 .subscription-form {
-    display: flex;
+  display: flex;
   justify-content: center;
 }
 
@@ -395,7 +395,7 @@ body {
 .page-footer-contacts-list {
   list-style: none;
   max-width: 142px;
-  }
+}
 
 .page-footer-contacts-link {
   display: block;
@@ -442,6 +442,7 @@ body {
   margin: 0;
   padding: 0;
   margin-bottom: 8px;
+
 }
 
 .breadcrumbs {
@@ -455,16 +456,18 @@ body {
 }
 
 .hotels-filter {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  width: 1060px;
+  grid-template-columns: 150px 140px 368px 191px;
   gap: 70px;
+
+  /* outline: 5px solid pink; */
 }
 
 .hotels-filter-group {
   padding: 0;
   margin: 0;
   border: 0 solid transparent;
-  max-width: 288px;
 }
 
 .hotels-filter-title {
@@ -503,7 +506,8 @@ body {
 }
 
 .hotel-price {
-  width: 288px;
+  width: 358px;
+  padding-left: 70px;
   display: flex;
   gap: 2px;
   align-items: flex-start;
@@ -646,6 +650,7 @@ body {
 .product-card-img {
   margin-bottom: 16px;
   display: block;
+  object-fit: contain;
 }
 
 .product-card-title {
