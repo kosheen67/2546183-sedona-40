@@ -583,6 +583,7 @@ body {
 }
 
 .search-results-title {
+  max-width: 500px;
   font-size: 30px;
   font-weight: 700;
   line-height: 36px;
@@ -590,7 +591,7 @@ body {
   color: #000000;
   margin: 0;
   padding: 0;
-  margin-right: 200px;
+  margin-right: 38px;
   margin-bottom: 40px;
 }
 
@@ -662,12 +663,22 @@ body {
   margin: 0;
 }
 
+.product-card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  justify-items: flex-end;
+  margin-top: auto;
+}
+
 .product-card-container {
   max-width: 300px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  align-items: flex-end;
   gap: 16px;
+
 }
 
 
