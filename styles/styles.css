@@ -101,6 +101,28 @@ body {
   font-size: 20px;
   line-height: 24px;
   padding: 16px 20px;
+
+
+}
+
+.navigation-user .navigation-item:nth-child(1),
+.navigation-user .navigation-item:nth-child(2) {
+  width: 44px;
+  height: 64px;
+  margin: 0;
+  padding: 12px 0;
+}
+
+.navigation-user .navigation-item:nth-child(1) .navigation-link {
+  background-image: url("../images/search.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.navigation-user .navigation-item:nth-child(2) .navigation-link {
+  background-image: url("../images/heart.svg");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .favourites-count {
@@ -224,8 +246,7 @@ body {
   margin: 0 auto;
 }
 
-.advantages-subtitle,
-.services-subtitle {
+.advantages-subtitle {
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
@@ -240,7 +261,6 @@ body {
 .advantages-description {
   color: #333333;
   margin: 0;
-
 }
 
 .color1 {
@@ -284,12 +304,41 @@ body {
   margin: 0;
 }
 
+
 .services-item {
   padding: 80px 85px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.services-image {
+  width: 75px;
+  height: 72px;
+  margin: 0 auto;
+}
+
+.home {
+  background-image:url("../images/services-1.svg");
+ }
+
+.food { background-image:url("../images/services-2.svg");}
+
+.souvenirs{ background-image:url("../images/services-3.svg");}
+
+.home, .food, .souvenirs {
+   background-repeat:no-repeat;
+  background-size: 100% 100%;
 }
 
 .services-subtitle {
-  margin: 102px 0 30px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+  color: #000000;
+  margin: 0;
+  text-align: center;
 }
 
 .services-description {
@@ -399,10 +448,32 @@ body {
 .page-footer-contacts-list {
   list-style: none;
   max-width: 142px;
-}
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+
+ }
 
 .page-footer-contacts-link {
   display: block;
+  position: relative;
+padding: 13px 11px;
+   width: 47px;
+height: 40px;
+}
+
+.contacts-icon {
+fill:#82b3d3;
+
+
+position: absolute;
+top: 0;
+ right:0;
+ bottom: 0;
+left: 0;
+margin: auto auto;
+
 }
 
 .page-footer-contacts-phone {
@@ -417,6 +488,8 @@ body {
   display: block;
 }
 
+
+
 /*Catalog page*/
 
 .catalog-hotels {
@@ -428,15 +501,31 @@ body {
   margin-top: -6px;
 }
 
-.breadcrumbs,
-.hotels-filter-list {
+.breadcrumbs-list {
   list-style: none;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   flex-wrap: wrap;
-  gap: 16px;
-  margin: 0;
+  gap: 10px;
+  margin: 0 0 40px;
   padding: 0;
+}
+
+.breadcrumbs-item {
+  min-width:13px;
+  min-height:15px;
+  }
+
+.home-item {
+  background-image: url("../images/home.svg");
+  background-repeat:no-repeat;
+  background-position: center;
+}
+
+.arrow-item {
+  background-image: url("../images/arrow.svg");
+  background-repeat:no-repeat;
+  background-position: center;
 }
 
 .inner-header-title {
@@ -465,8 +554,16 @@ body {
   grid-template-columns: 150px 140px 368px 191px;
   gap: 70px;
 
-  /* outline: 5px solid pink; */
 }
+
+.hotels-filter-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin: 0;
+  padding: 0;}
 
 .hotels-filter-group {
   padding: 0;
@@ -622,6 +719,14 @@ body {
   margin: 0;
   padding: 0;
   list-style-type: none;
+  display: flex;
+  align-items:flex-start;
+  gap: 8px;
+  margin-left: auto;
+}
+
+.select-button-item {
+  padding: 12px 14px;
 }
 
 .product-list {
@@ -679,10 +784,25 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items: flex-end;
   gap: 16px;
 }
 
+.product-card-stars {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  max-width: 140px;
+  min-height: 37px;
+
+}
+
+.product-card-star {
+  background-image: url("../images/star.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+   width: 18px;
+  height: 17px;
+}
 
 .product-card-price {
   width: 140px;
@@ -725,11 +845,6 @@ body {
   background: #7db54f;
   font-family: inherit;
   padding: 8px 17px;
-}
-
-.product-card-stars {
-  width: 140px;
-  display: flex;
 }
 
 .product-card-rating {
