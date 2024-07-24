@@ -81,6 +81,7 @@ body {
   width: 500px;
   display: flex;
   flex-wrap: wrap;
+  height: 100%;
 }
 
 .navigation-user {
@@ -101,6 +102,7 @@ body {
   font-size: 20px;
   line-height: 24px;
   padding: 16px 20px 0;
+  height: 100%;
 }
 
 .navigation-link-current::after {
@@ -127,16 +129,20 @@ body {
   background-position: center;
 }
 
-.navigation-user .navigation-item:nth-child(2) .navigation-link {
+.navigation-user .navigation-item:nth-child(2) {
   background-image: url("../images/heart.svg");
   background-repeat: no-repeat;
   background-position: center;
+  position: relative;
 }
 
 .favourites-count {
-  color: #ffffff;
+  position: absolute;
   min-width: 20px;
   height: 20px;
+  top: 1px;
+  left: 1px;
+  color: #ffffff;
   background-color: #7db54f;
   border-radius: 10px;
   font-size: 10px;
@@ -152,7 +158,6 @@ body {
 .navigation-link-current::before {
   text-decoration: underline;
   text-decoration-color: #756257;
-
 }
 
 .navigation-link-favourites {
@@ -190,7 +195,7 @@ body {
   background-repeat: no-repeat, no-repeat;
   background-position: center bottom, center center;
   background-color: #808080;
-  margin-top: -6px;
+  margin-top: -13px;
 }
 
 .welcome-image {
@@ -286,6 +291,14 @@ body {
   display: block;
   width: 60px;
   border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+  margin: 30px auto;
+}
+
+.line1::after {
+  content: "";
+  display: block;
+  width: 60px;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.3);
   margin: 30px auto;
 }
 
@@ -511,12 +524,10 @@ body {
   padding: 0;
   display: flex;
   flex-wrap: wrap;
-
 }
 
 .page-footer-contacts-link {
   display: block;
-  position: relative;
   padding: 13px 11px;
   width: 47px;
   height: 40px;
@@ -524,11 +535,6 @@ body {
 
 .contacts-icon {
   fill: #82b3d3;
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
   margin: auto auto;
 }
 
@@ -584,7 +590,7 @@ body {
   background: #82b3d3 url("../images/filter-background.jpg") no-repeat center center;
   background-size: cover;
   padding: 35px 70px 70px;
-  margin-top: -6px;
+  margin-top: -13px;
 }
 
 .breadcrumbs-list {
