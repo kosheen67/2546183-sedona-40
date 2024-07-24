@@ -64,20 +64,22 @@ body {
   flex-grow: 1;
 }
 
-.header-link {
-  display: block;
-}
-
 .navigation {
   display: flex;
   padding: 0 70px;
   margin: 0;
+  position: relative;
+}
+
+.header-link {
+  position: absolute;
 }
 
 .navigation-list {
   list-style: none;
   padding: 0;
   margin: 0;
+  margin-left: 168px;
   width: 500px;
   display: flex;
   flex-wrap: wrap;
@@ -91,6 +93,7 @@ body {
   margin-left: auto;
   display: flex;
   justify-content: flex-end;
+  align-items: center;
   flex-wrap: wrap;
 }
 
@@ -101,7 +104,7 @@ body {
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
-  padding: 16px 20px 0;
+  padding: 20px 16px;
   height: 100%;
 }
 
@@ -113,18 +116,15 @@ body {
   position: absolute;
   left: 16px;
   right: 16px;
+  bottom: 0;
   content: "";
-  display: block;
   border-bottom: 2px solid rgb(117, 98, 87);
-  margin: 0 auto;
-  padding-bottom: 20px;
-  order: 1;
 }
 
 .navigation-user .navigation-item:nth-child(1),
 .navigation-user .navigation-item:nth-child(2) {
   min-width: 44px;
-  min-height: 64px;
+  height: 64px;
   margin: 0;
   padding: 0;
   position: relative;
@@ -140,32 +140,18 @@ body {
   background-image: url("../images/heart.svg");
   background-repeat: no-repeat;
   background-position: center;
-
-}
-
-.favourites-count {
-  position: absolute;
-  top: 11px;
-  left: 20px;
-
-  min-width: 20px;
-  height: 20px;
-
-  background-color: #7db54f;
-  border-radius: 10px;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  padding: 0;
 }
 
 .favourites-count-span {
+  background-color: #7db54f;
   color: #ffffff;
   font-size: 10px;
   line-height: 10px;
   padding: 5px;
+  position: absolute;
+  top: 11px;
+  right: 4px;
+  border-radius: 50%;
 }
 
 .navigation-link-current::before {
@@ -185,7 +171,7 @@ body {
   text-transform: uppercase;
   text-decoration: none;
   padding: 8px 50px;
-  margin: 14px 0 14px 24px;
+  margin-left: 20px;
 }
 
 .navigation-link-favourites:hover,
@@ -199,16 +185,13 @@ body {
 }
 
 
-
 /*Welcome*/
-
 .welcome {
   background-image: url("../images/welcome-divider.svg"), url("../images/welcome-background.jpg");
   background-size: 100% auto, cover;
   background-repeat: no-repeat, no-repeat;
   background-position: center bottom, center center;
   background-color: #808080;
-  margin-top: -13px;
 }
 
 .welcome-image {
@@ -603,7 +586,6 @@ body {
   background: #82b3d3 url("../images/filter-background.jpg") no-repeat center center;
   background-size: cover;
   padding: 35px 70px 70px;
-  margin-top: -13px;
 }
 
 .breadcrumbs-list {
