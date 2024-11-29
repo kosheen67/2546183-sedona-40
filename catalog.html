@@ -104,23 +104,28 @@
 							<ul class="hotels-filter-list">
 								<li class="hotels-filter-item">
 									<label class="hotel-type-label">
-										<input class="hotel-type-input" type="radio" name="hotel-type-name" value="hotel" checked>
-										Гостиница
+										<input class="hotel-type-input visually-hidden" type="radio" name="hotel-type-name" value="hotel" checked>
+										<span class="radio-input"></span>
+										<span class="radio-label">Гостиница</span>
 									</label>
 								</li>
 								<li class="hotels-filter-item">
 									<label class="hotel-type-label">
-										<input class="hotel-type-input" type="radio" name="hotel-type-name" value="motel"> Мотель
+										<input class="hotel-type-input visually-hidden" type="radio" name="hotel-type-name" value="motel">
+										<span class="radio-input"></span>
+										<span class="radio-label">Мотель</span>
 									</label>
 								</li>
 								<li class="hotels-filter-item">
 									<label class="hotel-type-label">
-										<input class="hotel-type-input" type="radio" name="hotel-type-name" value="apartments">
-										Апартаменты
+										<input class="hotel-type-input visually-hidden" type="radio" name="hotel-type-name" value="apartments">
+										<span class="radio-input"></span>
+										<span class="radio-label">Апартаменты</span>
 									</label>
 								</li>
 							</ul>
 						</fieldset>
+
 						<fieldset class="hotels-filter-group hotel-price">
 							<legend class="hotels-filter-title"> Стоимость, ₽: </legend>
 
@@ -134,8 +139,17 @@
 								<span class="hotels-filter-span">до</span>
 							</div>
 
-							<input class="hotel-price-range-input" type="range" max="12000" min="0" value="9000">
+							<!-- <input class="hotel-price-range-input" type="range" max="12000" min="0" value="9000"> -->
+							<div class="slider-range-bar">
+								<button class="slider-range-toggle slider-range-toggle-min">
+									<span class="visually-hidden">Изменить минимальную цену</span>
+								</button>
+								<button class="slider-range-toggle slider-range-toggle-max">
+									<span class="visually-hidden">Изменить максимальную цену</span>
+								</button>
+							</div>
 						</fieldset>
+
 						<div class="hotels-filter-submit-block">
 							<button class="hotels-filter-submit-button" type="submit">Применить</button>
 							<button class="hotels-filter-submit-button reset" type="reset">Сбросить</button>
