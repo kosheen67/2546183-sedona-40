@@ -414,7 +414,6 @@ body {
   border: none;
   cursor: pointer;
   border-radius: 4px;
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
   font-family: inherit;
   font-weight: 700;
   font-size: 20px;
@@ -666,6 +665,9 @@ body {
   padding: 0;
 }
 
+.hotels-filter-item {
+  text-align: left;
+}
 .hotels-filter-group {
   padding: 0;
   margin: 0;
@@ -692,15 +694,48 @@ body {
   color: #000000;
 }
 
-.infrastructure-input,
+/* Checkbox */
+
 .hotel-type-input {
   margin-right: 16px;
 }
 
+.checkbox-input{
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+  background-color: #ffffff;
+  left: 0;
+  top: 2px;
+  display: block;
+}
+
+.infrastructure-input[type="checkbox"]:focus-visible + .checkbox-input {
+  outline: 3px solid #83B3D3;
+}
+
+.infrastructure-input[type="checkbox"]:disabled + .checkbox-input,
+.infrastructure-input[type="checkbox"]:disabled ~ .checkbox-label  {
+  opacity: 30%;
+}
+
+.infrastructure-input[type="checkbox"]:checked + .checkbox-input {
+  background-image: url(../images/checkmark.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 .infrastructure-label,
 .hotel-type-label {
+  position: relative;
   font-size: 18px;
   line-height: 23px;
+}
+
+.checkbox-label {
+  margin-left: 36px;
+  display: block;
 }
 
 .hotel-type {
