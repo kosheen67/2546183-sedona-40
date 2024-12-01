@@ -1067,20 +1067,22 @@ body {
 }
 
 .product-card-stars {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  max-width: 140px;
-  min-height: 37px;
-
+background-image: url("../images/rating-stars.png");
+background-repeat: no-repeat;
+  background-position: left;
 }
 
-.product-card-star {
-  background-image: url("../images/star.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 18px;
-  height: 17px;
+.hotel1,
+.hotel2 {
+  width: 100px;
+}
+
+.hotel3 {
+  width: 70px;
+}
+
+.hotel4 {
+  width: 50px;
 }
 
 .product-card-price {
