@@ -184,6 +184,7 @@
 					<span class="visually-hidden">Сделано командой html academy</span>
 				</a>
 			</footer>
+
 			<!-- Модальное окно "Поиск гостиницы в Седоне" -->
 			<div class="modal-container">
 				<div class="modal">
@@ -198,8 +199,9 @@
 									<label class="modal-label" for="check-in">Дата Заезда:</label>
 									<div class="input-box">
 										<div class="input-box-inner">
-											<input class="modal-input date-check-in" type="text" id="check-in" name="check-in" placeholder="Укажите дату" value="27 апреля 2020" required>
+											<input class="modal-input date-check-in" type="date" id="check-in" name="check-in" value="27 апреля 2020" required>
 											<button class="modal-input-icon check-in-icon" type="button">
+												<span class="visually-hidden">Выберите дату заезда в календаре</span>
 												<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" role="img" aria-label="Выберите дату заезда в календаре" viewBox="0 0 20 20">
 													<g fill="#000" opacity=".3">
 														<path d="M7.75 12c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5Z" />
@@ -216,8 +218,9 @@
 									<label class="modal-label" for="check-out">Дата Выезда:</label>
 									<div class="input-box">
 										<div class="input-box-inner">
-											<input class="modal-input date-check-out" type="text" id="check-out" name="check-out" placeholder="Укажите дату" value="1 сентября 2023" required>
+											<input class="modal-input date-check-out" type="date" id="check-out" name="check-out" value="1 сентября 2023" required>
 											<button class="modal-input-icon check-out-icon" type="button">
+												<span class="visually-hidden">Выберите дату выезда в календаре</span>
 												<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" role="img" aria-label="Выберите дату выезда в календаре" viewBox="0 0 20 20">
 													<g fill="#000" opacity=".3">
 														<path d="M7.75 12c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5Z" />
@@ -235,12 +238,14 @@
 										<label class="modal-label-person" for="number-of-adults">Взрослые:</label>
 										<div class="person-box-input">
 											<button class="number-input-minus adult-input-minus-icon" type="button">
+												<span class="visually-hidden">Уменьшить количество взрослых</span>
 												<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" role="img" aria-label="Уменьшить количество взрослых" viewBox="0 0 20 20">
 													<path fill="#756157" fill-opacity=".3" d="M3 9v2h14V9H3Z" />
 												</svg>
 											</button>
 											<input class="person-number-input adult-number-input" type="number" id="number-of-adults" name="number-of-adults" value="2">
 											<button class="number-input-plus adult-input-plus-icon" type="button">
+												<span class="visually-hidden">Увеличить количество взрослых</span>
 												<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" role="img" aria-label="Увеличить количество взрослых" viewBox="0 0 20 20">
 													<path fill="#756157" fill-opacity=".3" d="M17 9h-6V3H9v6H3v2h6v6h2v-6h6V9Z" />
 												</svg>
@@ -257,12 +262,14 @@
 										</div>
 										<div class="person-box-input">
 											<button class="number-input-minus child-input-minus" type="button">
+												<span class="visually-hidden">Уменьшить количество детей</span>
 												<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" role="img" aria-label="Уменьшить количество детей" viewBox="0 0 20 20">
 													<path fill="#756157" fill-opacity=".3" d="M3 9v2h14V9H3Z" />
 												</svg>
 											</button>
 											<input class="person-number-input child-number-input" id="number-of-childs" name="number-of-childs" type="number" value="2">
 											<button class="number-input-plus child-input-plus" type="button">
+												<span class="visually-hidden">Увеличить количество детей</span>
 												<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" role="img" aria-label="Увеличить количество детей" viewBox="0 0 20 20">
 													<path fill="#756157" fill-opacity=".3" d="M17 9h-6V3H9v6H3v2h6v6h2v-6h6V9Z" />
 												</svg>
