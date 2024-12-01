@@ -66,31 +66,30 @@ body {
 
 .navigation {
   display: flex;
-  padding: 0 70px;
+  padding: 0;
   margin: 0;
   position: relative;
 }
 
 .header-link {
   position: absolute;
+  margin-left: 70px;
 }
 
 .navigation-list {
   list-style: none;
   padding: 0;
   margin: 0;
-  margin-left: 168px;
-  width: 500px;
+  margin-left: 239px;
   display: flex;
   flex-wrap: wrap;
   height: 100%;
 }
 
 .navigation-user {
-  max-width: 308px;
   padding: 0;
   margin: 0;
-  margin-left: auto;
+  margin-left: 285px;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -170,7 +169,7 @@ body {
   line-height: 20px;
   text-transform: uppercase;
   text-decoration: none;
-  padding: 8px 50px;
+  padding: 8px 34px;
   margin-left: 20px;
 }
 
@@ -205,7 +204,7 @@ body {
 
 .advantages-title-container {
   margin: 0;
-  padding: 69px 70px 90px;
+  padding: 65px 70px 90px;
 }
 
 .advantages-title,
@@ -257,7 +256,7 @@ body {
 }
 
 .advantages-item {
-  padding: 102px 85px;
+  padding: 113px 85px;
 }
 
 .color1 {
@@ -506,7 +505,7 @@ body {
 
 /*Footer*/
 .page-footer {
-  padding: 40px 70px;
+  padding: 50px 70px;
   margin: 0;
   display: flex;
   justify-content: space-between;
@@ -920,7 +919,7 @@ body {
 /*Search results*/
 .search-results {
   text-align: left;
-  padding: 56px 70px 70px;
+  padding: 55px 70px 70px;
   margin: 0;
 }
 
@@ -939,6 +938,7 @@ body {
   padding: 0;
   margin-right: 38px;
   margin-bottom: 40px;
+  margin-top: 10px;
 }
 
 .select-control {
@@ -948,7 +948,7 @@ body {
   box-sizing: border-box;
   border: 2px solid rgb(229, 229, 229);
   border-radius: 4px;
-  margin-left: auto;
+  margin-left: 161px;
   height: 49px;
   outline: none;
 }
@@ -1223,7 +1223,7 @@ body {
 
 /*Subscription Catalog*/
 .subscription-catalog {
-  padding: 96px 70px 104px;
+  padding: 22px 70px 104px;
   margin: 0;
 }
 
@@ -1235,12 +1235,15 @@ body {
   text-transform: uppercase;
   padding: 0;
   margin: 0;
+  margin-bottom: 21px;
 }
 
 .subscription-description-catalog {
   color: #333333;
   font-size: 22px;
   line-height: 26px;
+  margin: 0;
+  margin-bottom: 55px;
 }
 
 
